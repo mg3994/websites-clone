@@ -10,6 +10,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/vrl-style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    "name": "Unique Packers & Movers",
+    "image": "/assets/images/logo-horizontal.png",
+    "telephone": "+917056895470",
+    "email": "abhisheksharmasharma443@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "addressCountry": "IN"
+    },
+    "url": "https://maps.app.goo.gl/zKgthME3pAzVzLiZ6",
+    "priceRange": "₹₹"
+  }
+  </script>
 </head>
 <body id="top-header">
 
@@ -32,6 +50,7 @@
               <div class="header-socials">
                 <ul>
                   <li><a href="https://www.facebook.com/profile.php?id=100057411285828" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com/uniquepackersandmovers2026" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                   <li><a href="https://www.youtube.com/@Antinna" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a></li>
                   <li><a href="https://wa.me/917056895470" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
                 </ul>
@@ -153,7 +172,7 @@
           <div class="footer-widget footer-contact">
             <h5 class="widget-title">Contact Us</h5>
             <ul class="list-unstyled">
-              <li><i class="fa fa-map-marker"></i><div>Central Hub, Hyderabad &amp; Delhi NCR</div></li>
+              <li><i class="fa fa-map-marker"></i><div>Ruby Block, Gundalapochapally, Kompally, Hyderabad, Telangana 500100</div></li>
               <li><i class="fa fa-phone"></i><div><a href="tel:+917056895470">+91 70568 95470</a></div></li>
               <li><i class="fa fa-envelope"></i><div><a href="mailto:abhisheksharmasharma443@gmail.com">abhisheksharmasharma443@gmail.com</a></div></li>
             </ul>
@@ -169,7 +188,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    function submitQuoteToWhatsApp() {
+        function submitQuoteToWhatsApp() {
       var name = document.getElementById('quoteName') ? document.getElementById('quoteName').value : '';
       var email = document.getElementById('quoteEmail') ? document.getElementById('quoteEmail').value : '';
       var phone = document.getElementById('quotePhone') ? document.getElementById('quotePhone').value : '';
@@ -178,15 +197,13 @@
       var service = document.getElementById('quoteService') ? document.getElementById('quoteService').value : '';
       var message = document.getElementById('quoteMessage') ? document.getElementById('quoteMessage').value : '';
 
-      var text = "Hi Unique Packers & Movers,%0A" +
-                 "I would like to request a quote:%0A" +
-                 "• Name: " + encodeURIComponent(name) + "%0A" +
-                 "• Email: " + encodeURIComponent(email) + "%0A" +
-                 "• Phone: " + encodeURIComponent(phone) + "%0A" +
-                 "• Service: " + encodeURIComponent(service) + "%0A" +
-                 "• Moving From: " + encodeURIComponent(from) + "%0A" +
-                 "• Moving To: " + encodeURIComponent(to) + "%0A" +
-                 "• Message: " + encodeURIComponent(message);
+      var text = "Hi Unique Packers and Movers, I am " + encodeURIComponent(name) +
+                 " and my contact email is " + encodeURIComponent(email) +
+                 ", mobile number is " + encodeURIComponent(phone) +
+                 ". Moving from " + encodeURIComponent(from) +
+                 " to " + encodeURIComponent(to) +
+                 " for " + encodeURIComponent(service) +
+                 " service. Message: " + encodeURIComponent(message);
 
       window.open("https://api.whatsapp.com/send?phone=+917056895470&text=" + text, "_blank");
     }
