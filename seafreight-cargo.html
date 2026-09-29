@@ -182,8 +182,9 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-        function submitQuoteToWhatsApp() {
+
+    <script>
+    function submitQuoteToWhatsApp() {
       var name = document.getElementById('quoteName') ? document.getElementById('quoteName').value : '';
       var email = document.getElementById('quoteEmail') ? document.getElementById('quoteEmail').value : '';
       var phone = document.getElementById('quotePhone') ? document.getElementById('quotePhone').value : '';
@@ -202,6 +203,23 @@
 
       window.open("https://api.whatsapp.com/send?phone=+917056895470&text=" + text, "_blank");
     }
+
+    $(document).ready(function() {
+      // Gallery filtering
+      $('#galleryFilters').on('click', '.filter-btn', function(e) {
+        e.preventDefault();
+        $('#galleryFilters .filter-btn').removeClass('active');
+        $(this).addClass('active');
+
+        var filter = $(this).attr('data-filter');
+        if (filter === 'all') {
+          $('#galleryGrid .gallery-item').stop(true, true).fadeIn(300);
+        } else {
+          $('#galleryGrid .gallery-item').stop(true, true).hide();
+          $('#galleryGrid .gallery-item[data-category="' + filter + '"]').stop(true, true).fadeIn(300);
+        }
+      });
+    });
   </script>
 </body>
 </html>
