@@ -112,16 +112,79 @@
 
   <section class="section-padding">
     <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <div id="galleryFilters" class="btn-group flex-wrap" role="group">
+            <button type="button" class="btn btn-outline-primary active filter-btn mb-2" data-filter="all">All Projects</button>
+            <button type="button" class="btn btn-outline-primary filter-btn mb-2" data-filter="bike">Bike Transport</button>
+            <button type="button" class="btn btn-outline-primary filter-btn mb-2" data-filter="car">Car Carrier</button>
+            <button type="button" class="btn btn-outline-primary filter-btn mb-2" data-filter="packing">Household & Packing</button>
+            <button type="button" class="btn btn-outline-primary filter-btn mb-2" data-filter="office">Office Relocation</button>
+          </div>
+        </div>
+      </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Home Shifting"></div>
-          <div class="col-lg-4 col-md-6 mb-4"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Packing Goods"></div>
-          <div class="col-lg-4 col-md-6 mb-4"><img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Bike Loading"></div>
-          <div class="col-lg-4 col-md-6 mb-4"><img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Car Carrier"></div>
-          <div class="col-lg-4 col-md-6 mb-4"><img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Office Moving"></div>
-          <div class="col-lg-4 col-md-6 mb-4"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Transport Container"></div>
+      <div class="row" id="galleryGrid">
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="bike">
+          <div class="card border-0 shadow-sm overflow-hidden rounded">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Bike Transport Belt Tied & Laminated">
+            <div class="card-body p-3 text-center">
+              <h6 class="font-weight-bold mb-1">Bike Lamination & Safety Harness</h6>
+              <small class="text-muted">Bike safely wrapped with corrugated sheets & secured with heavy-duty belts</small>
+            </div>
+          </div>
         </div>
 
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="car">
+          <div class="card border-0 shadow-sm overflow-hidden rounded">
+            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Car Carrier Hydraulic Ramp">
+            <div class="card-body p-3 text-center">
+              <h6 class="font-weight-bold mb-1">Covered Car Container Ramp</h6>
+              <small class="text-muted">Vehicle drive-in ramp for enclosed car carrier transportation</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="packing">
+          <div class="card border-0 shadow-sm overflow-hidden rounded">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Household Box Packing">
+            <div class="card-body p-3 text-center">
+              <h6 class="font-weight-bold mb-1">Bubble Wrapping & Heavy Cartons</h6>
+              <small class="text-muted">Multi-layer bubble wrapping for glassware, furniture, and electronics</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="office">
+          <div class="card border-0 shadow-sm overflow-hidden rounded">
+            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Office Furniture Lamination">
+            <div class="card-body p-3 text-center">
+              <h6 class="font-weight-bold mb-1">Corporate Office Lamination</h6>
+              <small class="text-muted">Stretch film & bubble wrap for office chairs, desks, and servers</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="packing">
+          <div class="card border-0 shadow-sm overflow-hidden rounded">
+            <img src="https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Cardboard Cargo Box Packing">
+            <div class="card-body p-3 text-center">
+              <h6 class="font-weight-bold mb-1">Warehouse Cargo Packing</h6>
+              <small class="text-muted">Sealed 7-ply corrugated box packing for long distance shifting</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="car">
+          <div class="card border-0 shadow-sm overflow-hidden rounded">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Intercity Transport Fleet">
+            <div class="card-body p-3 text-center">
+              <h6 class="font-weight-bold mb-1">Dedicated Container Logistics Truck</h6>
+              <small class="text-muted">GPS enabled closed container trucks for intercity relocation</small>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
